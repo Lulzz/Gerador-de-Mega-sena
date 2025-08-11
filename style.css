@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 20px;
+  color: #fff;
+}
+
+main {
+  background: #222;
+  border-radius: 12px;
+  max-width: 480px;
+  width: 100%;
+  padding: 25px 35px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: #f0db4f;
+  margin-top: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #f0db4f;
+  outline: none;
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease;
+  background-color: #333;
+  color: #fff;
+}
+
+input[type="text"]:focus {
+  border-color: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  background: #f0db4f;
+  color: #222;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #d4c13d;
+}
+
+#error, .error {
+  color: #ff4c4c;
+  font-weight: 600;
+  margin-top: 8px;
+  min-height: 20px;
+  text-align: center;
+}
+
+#resultadoNumeros {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 4px;
+  color: #f0db4f;
+  margin-bottom: 10px;
+}
+
+#listaTickets {
+  list-style: none;
+  padding-left: 0;
+  max-height: 180px;
+  overflow-y: auto;
+  margin-top: 10px;
+  border: 1px solid #f0db4f;
+  border-radius: 8px;
+  background-color: #111;
+}
+
+#listaTickets li {
+  padding: 10px 14px;
+  border-bottom: 1px solid #444;
+  font-weight: 600;
+  color: #f0db4f;
+}
+
+#listaTickets li:last-child {
+  border-bottom: none;
+}
+
+#resultadoSorteio {
+  margin-top: 20px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.3rem;
+  min-height: 24px;
+  color: #f0db4f;
+  letter-spacing: 2px;
+}

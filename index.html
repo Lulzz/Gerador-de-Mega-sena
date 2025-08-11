@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gerador de Mega-sena</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Gerador de Mega-sena</h1>
+
+    <section id="ultimoResultado">
+      <h2>Último Resultado</h2>
+      <div id="resultadoNumeros">Carregando...</div>
+    </section>
+
+    <section id="compraTickets">
+      <h2>Comprar Ticket</h2>
+      <form id="formTicket">
+        <label for="numerosInput">Digite 6 números entre 1 e 60 separados por vírgula:</label>
+        <input
+          type="text"
+          id="numerosInput"
+          placeholder="Ex: 5,12,23,34,45,59"
+          maxlength="17"
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Comprar Ticket</button>
+      </form>
+      <div id="msgErro" class="error"></div>
+    </section>
+
+    <section id="ticketsComprados">
+      <h2>Tickets Comprados</h2>
+      <ul id="listaTickets"></ul>
+    </section>
+
+    <section id="sorteio">
+      <button id="botaoSortear">Sortear</button>
+      <div id="resultadoSorteio"></div>
+    </section>
+  </main>
